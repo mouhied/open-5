@@ -161,6 +161,8 @@ class PostsModel extends Model
         return $this;
     }
 
+   
+
     /**
      * Get the value of image
      */ 

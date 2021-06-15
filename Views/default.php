@@ -29,7 +29,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/posts">Accueil </a>
+                    <a class="nav-link" href="/">Accueil </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/posts">Articles </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
@@ -68,6 +71,72 @@
             </div>
         </div>
     </header>
+    <section id="accueil">
+        <div class="container-fluid bg-light py-5 text-center">
+            <h2 class="text-danger">À propos</h2>
+            <p class="font-weight-bold mb-0">Qui suis je ?</p>
+        </div>
+
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-12" id="picture">
+                    <img src="contenu\img\couverture.png" alt="Univers" class="rounded img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <h3 class="text-center title-sm">
+                        <span class="font-weight-bold text-danger">Hassan MOUHIEDDINE</span>,
+                        <span class="font-weight-bold">Développeur PHP / Symfony</span>.
+                    </h3>
+
+                    <ul class="list-unstyled d-flex justify-content-center row small text-muted">
+                        <li class="mr-2">
+                            
+                            <img src="contenu\img\fa.png" alt=""> 36 ans
+                        </li>
+                        <li class="mr-2">
+                            
+                            <img src="contenu\img\gmail.png" alt=""> mouhieddinehassan@gmail.com
+                        </li>
+                    </ul>
+
+                    <p>
+                        <span class="font-weight-bold">Curieux</span> et <span class="font-weight-bold">passionné</span> par
+                        l'informatique et plus particulièrement par le <span class="font-weight-bold">développement
+                            Web</span>, j'ai pu acquérir de nombreuses compétences professionnelles en <span
+                            class="font-weight-bold">autodidacte</span> et en suivant le parcours de <span
+                            class="font-weight-bold">Développeur Web Junior (niveau III)</span> chez OpenClassrooms.
+                    </p>
+                    <p>
+                        Le développement <span class="font-weight-bold">Back-End</span> m'ayant beaucoup plus durant ma
+                        formation, je me suis spécialisé sur le langage <span class="font-weight-bold">PHP</span> avec le
+                        framework <span class="font-weight-bold">Symfony</span>.
+                    </p>
+                    <p>
+                        Actuellement, j'ai commencé un nouveau parcours de <span class="font-weight-bold">Développeur
+                            d'application PHP / Symfony (niveau II)</span> pour continuer à me perfectionner sur ces 2
+                        technologies que j'affectionne.
+                    </p>
+                    <p>
+                        N'hésitez pas à me <a href="/contact" class="text-danger font-weight-bold">contacter</a> pour plus
+                        de <span class="font-weight-bold">renseignements</span>.
+                    </p>
+
+                    <hr>
+                    <div class="col text-center">
+                       <a href="https://www.linkedin.com/in/hassan-mouhieddine-4b290b79/" target="_blank" title="Mon Linkedin"><img src="contenu\img\LinkedIn.png" alt="Linkedin">
+                         
+                        </a>
+                        <a href="https://github.com/mouhied" target="_blank" title="Mon Github">
+                        <img src="contenu\img\git.png" alt="GitHub">
+                        </a>
+                        <a href="contenu\CV-Hassan-Mouhieddine.pdf" title="Mon CV" download>
+                        <img src="contenu\img\CV.png" alt="CV">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <div class="container">
@@ -85,37 +154,79 @@
         <?php endif; ?>
         <?= $content ?>
     </div>
-    <hr>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/hassan-mouhieddine-4b290b79/" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
+    <footer class="site-footer footer bg-dark text-white-50">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row ">
+
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-danger">À propos</h5>
+                    <p>Hassan Mouhieddine, je suis Développeur PHP / Symfony dans la région Limousin.</p>
+                    <h5 class="text-danger">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="contenu\img\gmail.png" alt="Gmail">
+                            mouhieddinehassan@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-danger">Pages</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/" class="footer-link">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="/posts" class="footer-link">Articles</a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="footer-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="users/login" class="footer-link">Se connecter</a>
+                        </li>
+                        <li>
+                            <a href="users/register" class="footer-link">S'inscrire</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-danger">Liens</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.linkedin.com/in/hassan-mouhieddine-4b290b79/" target="_blank" class="footer-link">
+                                Linkedin
                             </a>
                         </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/mouhied" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
+                        <li>
+                            <a href="https://github.com/mouhied" target="_blank" class="footer-link">
+                                Github
                             </a>
                         </li>
-                        <li class="list-inline-item">
-                            <a href="contenu\CV-Hassan-Mouhieddine.pdf">
+                        <li>
+                            <a href="contenu\CV-Hassan-Mouhieddine.pdf" title="Mon CV" download class="footer-link">
+                                CV
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Projet-5 2021</p>
                 </div>
+
             </div>
+
         </div>
+
+        <div class="bg-light text-dark  py-3 text-center " >
+            © 2021 Copyright :<span class="text-primary font-weight-bold"> Blog Project</span>
+        </div>
+
+
     </footer>
     <script src="contenu/js/jquery.min.js"></script>
     <script src="contenu/js/bundle.min.js"></script>

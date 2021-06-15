@@ -31,7 +31,7 @@ class PostsController extends Controller
         $post = $postsModel->find($id);
 
         // On envoie à la vue
-        $this->render('posts/lire', compact('post'));
+        $this->render('posts/lire', compact('post'), 'default');
     }
 
     /**

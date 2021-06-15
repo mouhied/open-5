@@ -30,7 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/posts">Accueil </a>
+                    <a class="nav-link" href="/">Accueil </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/posts">Articles </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/admin">Accueil de l'administration</a>
@@ -82,6 +85,77 @@
         <?php endif; ?>
         <?= $content ?>
     </div>
+    <footer class="site-footer footer bg-dark text-white-50">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row ">
+
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-danger">À propos</h5>
+                    <p>Hassan Mouhieddine, je suis Développeur PHP / Symfony dans la région Limousin.</p>
+                    <h5 class="text-danger">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="contenu\img\gmail.png" alt="Gmail">
+                            mouhieddinehassan@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-danger">Pages</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/" class="footer-link">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="/posts" class="footer-link">Articles</a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="footer-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="users/login" class="footer-link">Se connecter</a>
+                        </li>
+                        <li>
+                            <a href="users/register" class="footer-link">S'inscrire</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-danger">Liens</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.linkedin.com/in/hassan-mouhieddine-4b290b79/" target="_blank" class="footer-link">
+                                Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mouhied" target="_blank" class="footer-link">
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contenu\CV-Hassan-Mouhieddine.pdf" title="Mon CV" download class="footer-link">
+                                CV
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bg-light text-dark  py-3 text-center " >
+            © 2021 Copyright :<span class="text-primary font-weight-bold"> Blog Project</span>
+        </div>
 
     <script src="contenu/js/jquery.min.js"></script>
     <script src="contenu/js/bundle.min.js"></script>

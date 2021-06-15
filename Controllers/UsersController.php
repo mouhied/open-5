@@ -43,7 +43,7 @@ class UsersController extends Controller
             ->ajoutBouton('Me connecter', ['class' => 'btn btn-primary'])
             ->finForm();
 
-        $this->render('users/login', ['loginForm' => $form->create()], 'default');
+        $this->render('users/login', ['loginForm' => $form->create()]);
     }
 
     /**
@@ -75,7 +75,7 @@ class UsersController extends Controller
             ->ajoutBouton('M\'inscrire', ['class' => 'btn btn-primary'])
             ->finForm();
 
-        $this->render('users/register', ['registerForm' => $form->create()], 'default');
+        $this->render('users/register', ['registerForm' => $form->create()]);
     }
 
     /**
